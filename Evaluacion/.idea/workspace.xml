@@ -51,6 +51,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -60,7 +67,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectId" id="1jUXlTezyfCemZzaQQZJ9DMqXh0" />
+  <component name="ProjectId" id="1k8aSmBtp6HXDNXmZ1yCCyVqgIv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -80,11 +87,16 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/LibreriaCalculos.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Libreria__Evaluacion.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sample" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -114,7 +126,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="ClassMath1" />
+      <module name="Evaluacion" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -200,41 +212,37 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="140" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1603860347046">
+    <state x="413" y="161" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1605148055500">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="140" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603860347046" />
-    <state x="389" y="126" key="FileChooserDialogImpl" timestamp="1603872911179">
+    <state x="413" y="161" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148055500" />
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605147850849">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="389" y="126" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603872911179" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1603874105471">
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605147850849" />
+    <state x="389" y="126" key="FileChooserDialogImpl" timestamp="1605148864350">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603874105471" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1603874105471">
+    <state x="389" y="126" key="FileChooserDialogImpl/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148864350" />
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1605148877472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603874105471" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1603874105471">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148877472" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1605148877472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603874105471" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1603874105471">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148877472" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1605148877472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603874105471" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1603872927974">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148877472" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1605148877472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603872927974" />
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603874185106">
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148877472" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1605148867907">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603874185106" />
-    <state x="65" y="87" key="new project wizard" timestamp="1603870547478">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="65" y="87" key="new project wizard/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1603870547478" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.768/1366.0.1280.1024@0.0.1366.768" timestamp="1605148867907" />
   </component>
 </project>
