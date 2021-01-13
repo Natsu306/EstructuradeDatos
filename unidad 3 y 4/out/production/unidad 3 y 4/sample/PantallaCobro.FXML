@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="625.0" styleClass="fondo" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCobro">
+    <top>
+        <HBox prefHeight="73.0" prefWidth="625.0" styleClass="fondo" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="45.0" prefWidth="322.0" styleClass="text2" stylesheets="@estilos.css" text="Salon Fruta Estelar" textFill="#bf2828">
+                    <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets top="20.0" />
+                    </HBox.margin>
+                </Label>
+                <Pane prefHeight="128.0" prefWidth="174.0" stylesheets="@estilos.css" HBox.hgrow="ALWAYS" />
+            <Label prefHeight="128.0" prefWidth="104.0" styleClass="label1" stylesheets="@estilos.css" />
+                <Label prefHeight="17.0" prefWidth="131.0" text="Jorge Estrada" textFill="#cd1515">
+                    <HBox.margin>
+                        <Insets top="10.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="344.0" prefWidth="418.0" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tabla" prefHeight="200.0" prefWidth="200.0" />
+                <Label text="Proximo pedido" textFill="#bf2828">
+                    <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="39.0" prefWidth="418.0">
+                    <children>
+                        <Label prefHeight="17.0" prefWidth="93.0" text="Nombre:" textFill="#bf2828" />
+                        <Label fx:id="Nombre1" prefHeight="17.0" prefWidth="99.0" textFill="#bf2828" />
+                        <Pane prefHeight="59.0" prefWidth="283.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#finalizar" prefHeight="20.0" prefWidth="116.0" styleClass="buttonInsertar" text="Finalizar">
+                            <HBox.margin>
+                                <Insets top="-17.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <VBox prefHeight="318.0" prefWidth="207.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="37.0" prefWidth="66.0" text="Bebida">
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="-35.0" left="20.0" right="20.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="23.0" prefWidth="207.0">
+                    <children>
+                        <ComboBox fx:id="comboBebidas" prefWidth="150.0">
+                            <HBox.margin>
+                                <Insets left="10.0" top="20.0" />
+                            </HBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="txtbebida1">
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" top="20.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+                <Label prefHeight="37.0" prefWidth="83.0" text="Platillo">
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="27.0" prefWidth="207.0">
+                    <children>
+                        <ComboBox fx:id="comboPlatillos" prefWidth="150.0">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="txtcantplatillos">
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="163.0" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Insertar">
+                    <VBox.margin>
+                        <Insets left="25.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+                <HBox prefHeight="167.0" prefWidth="207.0">
+                    <children>
+                        <Label text="Nombre">
+                            <HBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtnombre" prefHeight="25.0" prefWidth="172.0">
+                            <HBox.margin>
+                                <Insets left="-50.0" top="30.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" onAction="#guardarpedido" prefHeight="25.0" prefWidth="163.0" styleClass="buttonGuardar" stylesheets="@estilos.css" text="Guardar ">
+                    <VBox.margin>
+                        <Insets bottom="100.0" left="20.0" right="20.0" top="20.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>
