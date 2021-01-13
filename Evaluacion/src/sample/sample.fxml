@@ -17,9 +17,9 @@
          </font>
       </Text>
       <Text layoutX="58.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de pez" />
-      <ComboBox fx:id="Comoboarreglo2" layoutX="58.0" layoutY="90.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBox" layoutX="58.0" layoutY="90.0" prefWidth="150.0" />
       <Text layoutX="229.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por nacimiento" />
-      <TextField fx:id="Txtarreglo1" layoutX="229.0" layoutY="90.0" />
+      <TextField fx:id="txtArreglo" layoutX="229.0" layoutY="90.0" />
       <Button layoutX="390.0" layoutY="90.0" mnemonicParsing="false" onAction="#insertar" prefHeight="25.0" prefWidth="62.0" text="Insertar" />
       <Button layoutX="58.0" layoutY="122.0" mnemonicParsing="false" onAction="#procesar" prefHeight="25.0" prefWidth="393.0" text="Procesar" />
       <ListView fx:id="lista" layoutX="58.0" layoutY="168.0" prefHeight="281.0" prefWidth="393.0" />
