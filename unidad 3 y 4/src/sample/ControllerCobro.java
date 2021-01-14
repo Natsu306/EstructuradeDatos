@@ -15,6 +15,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class ControllerCobro {
     @FXML ComboBox comboBebidas,comboPlatillos;
@@ -29,6 +30,7 @@ public class ControllerCobro {
     TableColumn columnacantidadP=new TableColumn("Cant");
     ObservableList<Pedido> listapedidos= FXCollections.observableArrayList();
     Queue<itemPedido> cola=new LinkedList<>();
+    Stack<itemPedido> pila=new Stack<>();
     @FXML protected void initialize(){
         columnabebida.setCellValueFactory(new PropertyValueFactory<Pedido,String>("bebida"));
         columnacantidadB.setCellValueFactory(new PropertyValueFactory<Pedido,String>("cantidadbebida"));
@@ -77,6 +79,7 @@ public class ControllerCobro {
         }
         itemPedido pedido= new itemPedido(items,txtnombre.getText());
         cola.add(pedido);
+        pila.add(pedido);
         listapedidos.clear();
         txtbebida1.setText("");
         txtcantplatillos.setText("");
@@ -101,5 +104,18 @@ public class ControllerCobro {
             alert.setContentText("No se encuentran pedidos");
             alert.show();
         }
+    }
+    public void Status(){
+        itemPedido pedido=pila.pop();
+        txtnombre.setText(pedido.getNombre());
+        String [][] datos=pedido.getDatos();
+        for(int x=0;x<datos.length;x++){
+            System.out.print(datos[x][0]+"");
+            System.out.print(datos[x][1]+"");
+            System.out.print(datos[x][2]+"");
+            System.out.print(datos[x][3]+"");
+            System.out.println();
+        }
+
     }
 }
