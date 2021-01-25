@@ -12,6 +12,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import sample.Estructuras.Busqueda;
 import sample.Main;
 
 import java.awt.event.ActionEvent;
@@ -19,9 +20,14 @@ import java.io.File;
 import java.io.IOException;
 
 public class Controller {
-    @FXML
-    TextField txtusuario;
+    @FXML TextField txtusuario;
     @FXML PasswordField txtclave;
+    String [][] arrayUsuarios=new String[3][3];
+    @FXML protected void initialize(){
+        arrayUsuarios[0][0]="Gus";arrayUsuarios[0][1]="";arrayUsuarios[0][2]="";
+        arrayUsuarios[1][0]="nombre2";arrayUsuarios[1][1]="admin2";arrayUsuarios[1][2]="clave2";
+        arrayUsuarios[2][0]="nombre3";arrayUsuarios[2][1]="admin3";arrayUsuarios[2][2]="clave3";
+    }
     public void login(javafx.event.ActionEvent event) {
         ingresar();
     }
@@ -33,8 +39,11 @@ public class Controller {
     public void ingresar(){
         String u = txtusuario.getText();
         String c = txtclave.getText();
-        if (u.equals("") && c.equals("")) {
+        Busqueda busqueda=new Busqueda();
+        int indice=busqueda.secuencial(arrayUsuarios,u,c);
+        if (indice >=0) {
             try {
+                Main.datosN=arrayUsuarios[indice][0];
                 Parent root = FXMLLoader.load(getClass().getResource("PantallaCobro.fxml"));
                 Scene scene=new Scene(root);
 
@@ -52,11 +61,6 @@ public class Controller {
             alert.show();
 
         }
-        String path = "src/sample/Audio/RelaxStardewValley.mp3";
-        Media media = new Media(new File(path).toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.setAutoPlay(true);
-        mediaPlayer.setVolume(.1);
-        MediaView mediaView = new MediaView(mediaPlayer);
+
     }
 }

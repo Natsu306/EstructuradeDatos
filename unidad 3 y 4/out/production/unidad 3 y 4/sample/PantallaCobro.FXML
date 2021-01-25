@@ -26,7 +26,7 @@
                 </Label>
                 <Pane prefHeight="128.0" prefWidth="174.0" stylesheets="@estilos.css" HBox.hgrow="ALWAYS" />
             <Label prefHeight="128.0" prefWidth="104.0" styleClass="label1" stylesheets="@estilos.css" />
-                <Label prefHeight="17.0" prefWidth="131.0" text="Jorge Estrada" textFill="#cd1515">
+                <Label fx:id="txtnombreUser" prefHeight="17.0" prefWidth="131.0" text="Jorge Estrada" textFill="#cd1515">
                     <HBox.margin>
                         <Insets top="10.0" />
                     </HBox.margin>
@@ -58,6 +58,14 @@
                         </Button>
                     </children>
                 </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtventas" />
+                  <Button mnemonicParsing="false" onAction="#insertarVentas" text="Insertar" />
+                  <Button mnemonicParsing="false" onAction="#ordenarVenta" text="Ordenar" />
+                  <Label fx:id="lblventas" />
+               </children>
+            </HBox>
             </children>
         </VBox>
     </center>
@@ -116,6 +124,16 @@
                         <Insets left="25.0" top="20.0" />
                     </VBox.margin>
                 </Button>
+            <Button mnemonicParsing="false" onAction="#ordenarPlatillos" prefHeight="25.0" prefWidth="160.0" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Ordenar platillos" textOverrun="CENTER_ELLIPSIS">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OrdenarNombre" prefHeight="25.0" prefWidth="160.0" styleClass="buttonInsertar" stylesheets="@estilos.css" text="Ordenar por nombre" textOverrun="CENTER_ELLIPSIS">
+               <VBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </VBox.margin>
+            </Button>
                 <HBox prefHeight="167.0" prefWidth="207.0">
                     <children>
                         <Label text="Nombre">

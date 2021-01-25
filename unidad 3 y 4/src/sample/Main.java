@@ -14,19 +14,13 @@ import java.io.File;
 
 public class Main extends Application {
     public static Stage stage;
+    public static String datosN="";
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage = primaryStage;
         primaryStage.getIcons().add(new Image("https://stardewcommunitywiki.com/mediawiki/images/4/47/Calendar_Flag_Anim.gif'"));
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Salon Fruta Estelar");
-        primaryStage.getIcons().add(new Image("https://stardewcommunitywiki.com/mediawiki/images/4/47/Calendar_Flag_Anim.gif"));
-        String path = "src/sample/Audio/RelaxStardewValley.mp3";
-        Media media = new Media(new File(path).toURI().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.setAutoPlay(true);
-        mediaPlayer.setVolume(.1);
-        MediaView mediaView = new MediaView(mediaPlayer);
         primaryStage.setScene(new Scene(root, 427, 610));
         primaryStage.show();
     }
